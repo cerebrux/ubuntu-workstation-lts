@@ -7,7 +7,7 @@ This script will remove unessecary packages for workstation purposes.
 
 # Introduction
 
-[Ubuntu LTS](https://wiki.ubuntu.com/LTS) is used by hundreds of thousands of people in the business and government sectors (developers, IT, labs, manufacturing etc). Most of the time, IT managers and sysadmins will uninstall packages and customise the Desktop version of Ubuntu, to fit their need. This is because Ubuntu Desktop comes with tons of preinstalled stuff that are unnecesary for workstation wnvironments.
+[Ubuntu LTS](https://wiki.ubuntu.com/LTS) is used by hundreds of thousands of people in the business and government sectors (developers, IT, labs, manufacturing etc). Most of the time, IT managers and sysadmins will uninstall packages and customize the Desktop version of Ubuntu, to fit their need. This is because Ubuntu Desktop comes with tons of preinstalled stuff that are unnecessary for workstation environments.
 
 Personally I use this script to remove the packages mentioned below, to provide  a better and clean experinece on workstation environments.
 
@@ -15,7 +15,7 @@ Personally I use this script to remove the packages mentioned below, to provide 
 
 The following packages will be removed. So , clone the repo, open the script with your favorite editor and adjust accordingly to your needs.
 
-If you have any suggestions, to add or fix somthing please open an issue or send a pull request.
+If you have any suggestions, to add or fix something please open an issue or send a pull request.
 
 - account-plugin-aim
 - account-plugin-facebook
