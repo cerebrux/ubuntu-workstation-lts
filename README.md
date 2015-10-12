@@ -13,7 +13,7 @@ Personally I use this script to remove the packages mentioned below, to provide 
 
 ## Packages that will be removed
 
-The following packages will be removed. So , clone the repo, open the script with your favorite editor and adjust accordingly to your needs.
+The following packages will be removed. Adittionally it will disable online suggestions in dash. So , clone the repo, open the script with your favorite editor and adjust accordingly to your needs.
 
 If you have any suggestions, to add or fix something please open an issue or send a pull request.
 
@@ -27,6 +27,7 @@ If you have any suggestions, to add or fix something please open an issue or sen
 - account-plugin-yahoo
 - aisleriot
 - brltty
+- checkbox (System Testing)
 - colord
 - deja-dup
 - deja-dup-backend-gvfs
@@ -73,6 +74,7 @@ If you have any suggestions, to add or fix something please open an issue or sen
 - mcp-account-manager-uoa
 - nautilus-sendto-empathy
 - python3-uno
+- remmina
 - rhythmbox
 - rhythmbox-plugins
 - rhythmbox-plugin-zeitgeist
@@ -92,6 +94,7 @@ If you have any suggestions, to add or fix something please open an issue or sen
 - totem-common
 - totem-mozilla
 - totem-plugins
+- transmission
 - unity-scope-audacious
 - unity-scope-chromiumbookmarks
 - unity-scope-clementine
@@ -112,6 +115,8 @@ If you have any suggestions, to add or fix something please open an issue or sen
 - unity-scope-virtualbox
 - unity-scope-yelp
 - unity-scope-zotero
+- usb-creator
+- webbrowser-app
 
 # Desclaimer
 
