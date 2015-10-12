@@ -7,7 +7,7 @@ This script will remove unessecary packages for workstation purposes.
 
 # Introduction
 
-[Ubuntu LTS]() is used by hundreds of thousands of people in the business and government sectors (developers, IT, labs, manufacturing etc). Most of the time, IT managers and sysadmins will uninstall packages and customise the Desktop version of Ubuntu, to fit their need. This is because Ubuntu Desktop comes with tons of preinstalled stuff that are unnecesary for workstation wnvironments.
+[Ubuntu LTS](https://wiki.ubuntu.com/LTS) is used by hundreds of thousands of people in the business and government sectors (developers, IT, labs, manufacturing etc). Most of the time, IT managers and sysadmins will uninstall packages and customise the Desktop version of Ubuntu, to fit their need. This is because Ubuntu Desktop comes with tons of preinstalled stuff that are unnecesary for workstation wnvironments.
 
 Personally I use this script to remove the packages mentioned below, to provide  a better and clean experinece on workstation environments.
 
