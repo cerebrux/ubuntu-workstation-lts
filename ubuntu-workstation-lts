@@ -44,7 +44,7 @@ apt-get --purge -y autoremove rhythmbox-mozilla
 apt-get --purge -y autoremove whoopsie whoopsie-preferences
 
 # Remove more bloatware
-apt-get --purge -y autoremove shotwell shotwell-common landscape-* colord deja-dup deja-dup-backend-gvfs duplicity empathy empathy-common gnome-mahjongg gnome-screensaver gnome-video-effects gnomine libreoffice-* libsane simple-scan hplip* rhythmbox* sane-utils totem* remmina* checkbox* usb-creator* webbrowser-app transmission-* seahorse*
+apt-get --purge -y autoremove shotwell shotwell-common landscape-* colord deja-dup deja-dup-backend-gvfs duplicity empathy empathy-common gnome-mahjongg gnome-screensaver gnome-video-effects gnomine libreoffice-* libsane simple-scan hplip* rhythmbox* sane-utils totem* remmina* checkbox* usb-creator* webbrowser-app transmission-* seahorse* bluez bluez-cups
 
 # Disable Online suggestions
 GS="/usr/bin/gsettings"

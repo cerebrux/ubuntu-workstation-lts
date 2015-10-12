@@ -27,6 +27,8 @@ If you have any suggestions, to add or fix something please open an issue or sen
 - account-plugin-yahoo
 - aisleriot
 - brltty
+- bluez
+- bluez-cups
 - checkbox (System Testing)
 - colord
 - deja-dup
