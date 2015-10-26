@@ -3,7 +3,7 @@
 
 # Abstract
 
-This script will remove unessecary packages for workstation purposes.
+This script will convert an Ubuntu LTS distribution to Workstation by removing unessecary packages for workstation purposes.
 
 # Introduction
 
