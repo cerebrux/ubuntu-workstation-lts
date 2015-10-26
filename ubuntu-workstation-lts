@@ -46,6 +46,10 @@ apt-get --purge -y autoremove whoopsie whoopsie-preferences
 # Remove more bloatware
 apt-get --purge -y autoremove shotwell shotwell-common landscape-* colord deja-dup deja-dup-backend-gvfs duplicity empathy empathy-common gnome-mahjongg gnome-screensaver gnome-video-effects gnomine libreoffice-* libsane simple-scan hplip* rhythmbox* sane-utils totem* remmina* checkbox* usb-creator* webbrowser-app transmission-* seahorse* bluez bluez-cups
 
+# Clear out any packages that are no longer required at this point
+apt-get --purge -y autoremove
+apt-get update
+
 # Disable Online suggestions
 GS="/usr/bin/gsettings"
 CCUL="com.canonical.Unity.lenses"
@@ -105,8 +109,4 @@ fi
 # a more elegant solution
 sudo iptables -A OUTPUT -d 91.189.92.11 -j REJECT
 
-echo "All done. Enjoy your privacy."
-
-# Clear out any packages that are no longer required at this point
-apt-get --purge -y autoremove
-apt-get update
+echo "All done. Enjoy your Workstation."
