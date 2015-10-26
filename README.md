@@ -97,6 +97,7 @@ If you have any suggestions, to add or fix something please open an issue or sen
 - totem-mozilla
 - totem-plugins
 - transmission
+- unity-control-center
 - unity-scope-audacious
 - unity-scope-chromiumbookmarks
 - unity-scope-clementine
