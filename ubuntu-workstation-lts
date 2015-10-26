@@ -10,46 +10,129 @@ if [ $EUID -ne 0 ] ; then
     exit 1
 fi
 
+clear
+
+echo "######################"
+echo "###                ###"
+echo "##    Phase 1/13    ##"
+echo "#                    #"
+echo "######################"
+sleep 2
+
 # Remove remaining oneconf, note, also removes software-center which you may not want
-apt-get --purge -y autoremove oneconf oneconf-common python-ubuntu-sso-client ubuntu-sso-client ubuntu-sso-client-qt ubuntuone-client ubuntuone-client-data
-
+apt-get --purge autoremove oneconf oneconf-common python-ubuntu-sso-client ubuntu-sso-client ubuntu-sso-client-qt ubuntuone-client ubuntuone-client-data
+clear
+echo "######################"
+echo "###                ###"
+echo "##    Phase 2/13    ##"
+echo "#                    #"
+echo "######################"
+sleep 2
 # Remove account plugins that are privacy/etc. risks
-apt-get --purge -y autoremove account-plugin-aim account-plugin-facebook account-plugin-flickr account-plugin-google account-plugin-jabber account-plugin-salut account-plugin-twitter account-plugin-windows-live account-plugin-yahoo folks-common friends friends-dispatcher friends-facebook friends-twitter gnome-contacts nautilus-sendto unity-lens-friends unity-scope-gdrive unity-scope-musicstores unity-scope-zotero libfolks-eds25 libfriends0 mcp-account-manager-uoa rhythmbox-plugin-magnatune libaccount-plugin-google
-
+apt-get --purge autoremove account-plugin-aim account-plugin-facebook account-plugin-flickr account-plugin-google account-plugin-jabber account-plugin-salut account-plugin-twitter account-plugin-windows-live account-plugin-yahoo folks-common friends friends-dispatcher friends-facebook friends-twitter gnome-contacts nautilus-sendto unity-lens-friends unity-scope-gdrive unity-scope-musicstores unity-scope-zotero libfolks-eds25 libfriends0 mcp-account-manager-uoa rhythmbox-plugin-magnatune libaccount-plugin-google
+clear
+echo "######################"
+echo "###                ###"
+echo "##    Phase 3/13    ##"
+echo "#                    #"
+echo "######################"
+sleep 2
 # Remove unity lens related packages
-apt-get --purge -y autoremove telepathy-indicator unity-lens-music unity-lens-photos unity-lens-video unity-scope-audacious unity-scope-chromiumbookmarks unity-scope-clementine unity-scope-colourlovers unity-scope-devhelp unity-scope-firefoxbookmarks unity-scope-gmusicbrowser unity-scope-gourmet unity-scope-guayadeque unity-scope-musique unity-scope-openclipart unity-scope-texdoc unity-scope-tomboy unity-scope-yelp unity-webapps-common unity-webapps-qml unity-webapps-service xul-ext-unity xul-ext-websites-integration unity-scope-video-remote unity-voice-service unity-scope-virtualbox
+apt-get --purge autoremove telepathy-indicator unity-lens-music unity-lens-photos unity-lens-video unity-scope-audacious unity-scope-chromiumbookmarks unity-scope-clementine unity-scope-colourlovers unity-scope-devhelp unity-scope-firefoxbookmarks unity-scope-gmusicbrowser unity-scope-gourmet unity-scope-guayadeque unity-scope-musique unity-scope-openclipart unity-scope-texdoc unity-scope-tomboy unity-scope-yelp unity-webapps-common unity-webapps-qml unity-webapps-service xul-ext-unity xul-ext-websites-integration unity-scope-video-remote unity-voice-service unity-scope-virtualbox
+clear
+echo "######################"
+echo "###                ###"
+echo "##    Phase 4/13    ##"
+echo "#                    #"
+echo "######################"
+sleep 2
 
 # Remove local mail clients if you only use webmail
-apt-get --purge -y autoremove evolution-data-server* thunderbird*
-
+apt-get --purge autoremove evolution-data-server* thunderbird*
+clear
+echo "######################"
+echo "###                ###"
+echo "##    Phase 5/13    ##"
+echo "#                    #"
+echo "######################"
+sleep 2
 # Remove Zeitgeist event logger
 # NOTE: Disabled as it tries to remove nautilus and gedit that are essential
-#apt-get --purge -y autoremove zeitgeist zeitgeist-core zeitgeist-datahub python-zeitgeist rhythmbox-plugin-magnatune rhythmbox-plugin-zeitgeist libzeitgeist-1.0-1 libzeitgeist-2.0-0 
+#apt-get --purge autoremove zeitgeist zeitgeist-core zeitgeist-datahub python-zeitgeist rhythmbox-plugin-magnatune rhythmbox-plugin-zeitgeist libzeitgeist-1.0-1 libzeitgeist-2.0-0 
 # Cannot remove libzeitgeist without removing nautilus, so remove all of the other components
-apt-get --purge -y autoremove zeitgeist zeitgeist-datahub zeitgeist-core python-zeitgeist rhythmbox-plugin-zeitgeist
-
+apt-get --purge autoremove zeitgeist zeitgeist-datahub zeitgeist-core python-zeitgeist rhythmbox-plugin-zeitgeist
+clear
+echo "######################"
+echo "###                ###"
+echo "##    Phase 6/13    ##"
+echo "#                    #"
+echo "######################"
+sleep 2
 # Remove ubuntu firefox extension
-apt-get --purge -y autoremove xul-ext-ubufox
-
+apt-get --purge autoremove xul-ext-ubufox
+clear
+echo "######################"
+echo "###                ###"
+echo "##    Phase 7/13    ##"
+echo "#                    #"
+echo "######################"
+sleep 2
 # Remove telepathy
-apt-get --purge -y autoremove telepathy-gabble telepathy-haze telepathy-idle telepathy-logger telepathy-mission-control-5 telepathy-salut
-
+apt-get --purge autoremove telepathy-gabble telepathy-haze telepathy-idle telepathy-logger telepathy-mission-control-5 telepathy-salut
+clear
+echo "######################"
+echo "###                ###"
+echo "##    Phase 8/13    ##"
+echo "#                    #"
+echo "######################"
+sleep 2
 # Remove totem media player
-apt-get --purge -y autoremove totem totem-common totem-plugins totem-mozilla
-
+apt-get --purge autoremove totem totem-common totem-plugins totem-mozilla
+clear
+echo "######################"
+echo "###                ###"
+echo "##    Phase 9/13    ##"
+echo "#                    #"
+echo "######################"
+sleep 2
 # Remove rhythmbox iTunes Firefox plugin
-apt-get --purge -y autoremove rhythmbox-mozilla
+apt-get --purge autoremove rhythmbox-mozilla
+clear
+echo "######################"
+echo "###                ###"
+echo "##    Phase 10/13   ##"
+echo "#                    #"
+echo "######################"
+sleep 2
 
 # Remove error submission daemon
-apt-get --purge -y autoremove whoopsie whoopsie-preferences
-
+apt-get --purge autoremove whoopsie whoopsie-preferences
+clear
+echo "######################"
+echo "###                ###"
+echo "##    Phase 11/13   ##"
+echo "#                    #"
+echo "######################"
+sleep 2
 # Remove more bloatware
-apt-get --purge -y autoremove shotwell shotwell-common landscape-* colord deja-dup deja-dup-backend-gvfs duplicity empathy empathy-common gnome-mahjongg gnome-screensaver gnome-video-effects gnomine libreoffice-* libsane simple-scan hplip* rhythmbox* sane-utils totem* remmina* checkbox* usb-creator* webbrowser-app transmission-* seahorse* bluez bluez-cups
-
+apt-get --purge autoremove shotwell shotwell-common landscape-* colord deja-dup deja-dup-backend-gvfs duplicity empathy empathy-common gnome-mahjongg gnome-screensaver gnome-video-effects gnomine libreoffice-* libsane simple-scan hplip* rhythmbox* sane-utils totem* remmina* checkbox* usb-creator* webbrowser-app transmission-* seahorse* bluez bluez-cups
+clear
+echo "######################"
+echo "###                ###"
+echo "##    Phase 12/13   ##"
+echo "#                    #"
+echo "######################"
+sleep 2
 # Clear out any packages that are no longer required at this point
-apt-get --purge -y autoremove
+apt-get --purge autoremove
 apt-get update
-
+clear
+echo "######################"
+echo "###                ###"
+echo "##    Phase 13/13   ##"
+echo "#                    #"
+echo "######################"
+sleep 2
 # Disable Online suggestions
 GS="/usr/bin/gsettings"
 CCUL="com.canonical.Unity.lenses"
@@ -108,5 +191,10 @@ fi
 # Editing /etc/hosts is OK, but adding an iptables rule seems to be
 # a more elegant solution
 sudo iptables -A OUTPUT -d 91.189.92.11 -j REJECT
+clear
 
-echo "All done. Enjoy your Workstation."
+echo "############################################"
+echo "###                                      ###"
+echo "##    All done. Enjoy your Workstation.   ##"
+echo "#                                          #"
+echo "############################################"
